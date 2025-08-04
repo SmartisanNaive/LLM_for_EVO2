@@ -1,6 +1,6 @@
 {
-  "nvidia_api_key": "xxxx",
-  "glm_api_key": "xxxx",
+  "nvidia_api_key": "your nvidia api key",
+  "glm_api_key": "your glm api key",
   "evo2_base_url": "https://health.api.nvidia.com/v1/biology/nvidia/evo",
   "glm_base_url": "https://open.bigmodel.cn/api/paas/v4/"
 }
