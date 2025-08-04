@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "idf.pythonInstallPath": "/opt/homebrew/bin/python3"
+}

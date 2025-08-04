@@ -1,0 +1,36 @@
+[project]
+name = "evo2-sequence-designer"
+version = "1.0.0"
+description = "Cell-free system sequence design platform based on evo2 and GLM"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Jiang Han", email = "jianghan@example.com"},
+]
+keywords = ["bioinformatics", "synthetic-biology", "dna-design", "evo2", "cell-free"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "biopython>=1.85",
+    "openai>=1.98.0",
+    "requests>=2.32.4",
+    "rich>=14.1.0",
+    "typer>=0.16.0",
+    "zhipuai>=2.1.5.20250726",
+]
+
+[project.scripts]
+evo2-designer = "evo2_sequence_designer.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
