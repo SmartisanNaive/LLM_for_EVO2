@@ -26,13 +26,13 @@ from rich.box import ROUNDED, DOUBLE, HEAVY
 # from rich.gradient import Gradient  # Remove incompatible import
 from rich.style import Style
 
-from src.evo2_sequence_designer.models.evo2_client import Evo2Client, Evo2Config
-from src.evo2_sequence_designer.models.glm_client import GLMClient, GLMConfig
-from src.evo2_sequence_designer.design.three_stage_designer import ThreeStageDesigner, DesignParameters, DesignProject
-from src.evo2_sequence_designer.design.llm_evo2_collaborative_designer import LLMEvo2CollaborativeDesigner, CollaborativeResult
-from src.evo2_sequence_designer.analysis.sequence_analyzer import SequenceAnalyzer
+from evo2_sequence_designer.models.evo2_client import Evo2Client, Evo2Config
+from evo2_sequence_designer.models.glm_client import GLMClient, GLMConfig
+from evo2_sequence_designer.design.three_stage_designer import ThreeStageDesigner, DesignParameters, DesignProject
+from evo2_sequence_designer.design.llm_evo2_collaborative_designer import LLMEvo2CollaborativeDesigner, CollaborativeResult
+from evo2_sequence_designer.analysis.sequence_analyzer import SequenceAnalyzer
 # Remove GFP Demo related imports
-from src.evo2_sequence_designer.utils.logger import get_logger, setup_session_logger
+from evo2_sequence_designer.utils.logger import get_logger, setup_session_logger
 
 # Global logger instance
 logger = get_logger()
