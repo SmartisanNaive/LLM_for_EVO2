@@ -30,11 +30,43 @@ This project implements a Python program based on the interaction between deep l
 - **Natural Language Interaction**: Multi-turn dialogue for sequence design requirements
 - **Agent Intelligent Optimization**: Quality-driven automatic iteration and parameter adjustment
 
+## 📦 Prerequisites
+
+### Install uv (Python Package Manager)
+
+**macOS:**
+```bash
+# Using Homebrew (recommended)
+brew install uv
+
+# Or using curl
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Linux:**
+```bash
+# Using curl
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Or using pip
+pip install uv
+```
+
+**Windows:**
+```powershell
+# Using PowerShell
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Or using pip
+pip install uv
+```
+
 ## 🚀 Installation
 
 ```bash
 # Clone the project
-cd evo2-sequence-designer
+git clone https://github.com/SmartisanNaive/LLM_for_EVO2.git
+cd LLM_for_EVO2
 
 # Create virtual environment and install dependencies using uv
 uv sync
