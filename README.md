@@ -61,7 +61,6 @@ uv run evo2-designer test
 ### Configuration Files
 
 - **API Configuration**: `api_config.json` (project root)
-- **Main Configuration**: `~/.evo2_designer/config.json`
 
 Example configuration:
 ```json

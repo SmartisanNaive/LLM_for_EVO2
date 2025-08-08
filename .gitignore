@@ -8,3 +8,27 @@ wheels/
 
 # Virtual environments
 .venv
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project-specific files
+logs/
+out/
+*.log
+
+# API keys and sensitive data
+api_config.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

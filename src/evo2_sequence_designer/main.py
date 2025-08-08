@@ -12,6 +12,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeElapsedColumn, MofNCompleteColumn
+from contextlib import contextmanager
 from rich.prompt import Prompt, Confirm, IntPrompt
 from rich.syntax import Syntax
 from rich.markdown import Markdown
@@ -80,7 +81,20 @@ def show_startup_animation():
     console.print("[bold blue]🚀 Ready to go, start your DNA design journey![/bold blue]")
     console.print("="*75 + "\n")
 
-# Remove all animation functions
+# Progress bar helper function
+@contextmanager
+def create_fancy_progress():
+    """创建一个美观的进度条"""
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+        TimeElapsedColumn(),
+        console=console,
+        transient=True
+    ) as progress:
+        yield progress
 
 # Configuration file paths
 CONFIG_DIR = Path.home() / ".evo2_designer"
